@@ -1,17 +1,23 @@
 from pathlib import Path
 from datetime import datetime
-import io, re, sqlite3
+import io, os, re, sqlite3, tempfile
 from collections import Counter
 from flask import Flask, render_template, request, redirect, url_for, flash, g, send_file
 from werkzeug.utils import secure_filename
 import pandas as pd
 
 BASE=Path(__file__).resolve().parent
-UPLOAD_DIR=BASE/'uploads'
-UPLOAD_DIR.mkdir(exist_ok=True)
+data_dir=os.environ.get('SCREENING_DATA_DIR')
+if data_dir:
+ DATA_DIR=Path(data_dir)
+elif os.environ.get('VERCEL')=='1':
+ DATA_DIR=Path(tempfile.gettempdir())/'ai-resume-screening'
+else:
+ DATA_DIR=BASE
+DATA_DIR.mkdir(parents=True,exist_ok=True)
 ALLOWED={'.pdf','.docx','.txt'}
 app=Flask(__name__)
-app.config.update(SECRET_KEY='change-this-demo-secret-before-deployment', DATABASE=str(BASE/'screening.db'), MAX_CONTENT_LENGTH=8*1024*1024)
+app.config.update(SECRET_KEY='change-this-demo-secret-before-deployment', DATABASE=str(DATA_DIR/'screening.db'), MAX_CONTENT_LENGTH=8*1024*1024)
 
 SKILL_GROUPS={
  'Programming': ['python','java','c++','c','javascript','typescript','sql','r'],

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TalentLens — AI-Powered Resume Screening System
 
 A local resume screening and ranking demo built with Python, Flask, Pandas, SQLite and NLP-style text processing. It extracts text from PDF/DOCX/TXT resumes, detects skills from a curated vocabulary, compares them to skills detected in a job description, ranks candidates by overlap, explains matched/missing skills, stores screening history and exports CSV.
@@ -51,7 +50,8 @@ Resume files are read in memory and are not persisted by the application. Extrac
 - `static/style.css`: dashboard styling and responsive layout.
 - `static/app.js`: file preview and form interactions.
 - `sample_resumes/`: synthetic test resumes.
-=======
-# AI--Powered-Resume-Screening-System
-Ai Powered Resume Screener
->>>>>>> 9221e4580f1ab062ed73621dc0e6c8e85f727068
+
+## Deployment
+The app can run on Vercel, but its serverless filesystem is read-only except for temporary storage. On Vercel, the app stores SQLite data under `/tmp/ai-resume-screening` so it can start without trying to write into the deployed application directory. This temporary database is not durable: screening history can disappear when an instance is recycled and may not be shared between instances. Use a persistent database for production or whenever screening history must be retained.
+
+For a non-serverless deployment, set `SCREENING_DATA_DIR` to a writable persistent directory to choose where `screening.db` is created. If it is not set, the database stays alongside `app.py`, preserving the local default.
