@@ -138,4 +138,5 @@ def export_csv(run_id):
 @app.errorhandler(413)
 def too_large(_error): return 'Upload too large. Each resume must be no more than 8 MB.',413
 init_db()
-if __name__=='__main__': app.run(debug=True)
+if __name__=='__main__':
+   app.run(debug=True)
