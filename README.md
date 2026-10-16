@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TalentLens — AI-Powered Resume Screening System
 
 A local resume screening and ranking demo built with Python, Flask, Pandas, SQLite and NLP-style text processing. It extracts text from PDF/DOCX/TXT resumes, detects skills from a curated vocabulary, compares them to skills detected in a job description, ranks candidates by overlap, explains matched/missing skills, stores screening history and exports CSV.
@@ -50,3 +51,7 @@ Resume files are read in memory and are not persisted by the application. Extrac
 - `static/style.css`: dashboard styling and responsive layout.
 - `static/app.js`: file preview and form interactions.
 - `sample_resumes/`: synthetic test resumes.
+=======
+# AI--Powered-Resume-Screening-System
+Ai Powered Resume Screener
+>>>>>>> 9221e4580f1ab062ed73621dc0e6c8e85f727068
