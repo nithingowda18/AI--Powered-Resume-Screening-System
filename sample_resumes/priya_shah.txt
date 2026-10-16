@@ -1,0 +1,8 @@
+Priya Shah
+Email: priya.shah@example.com
+SUMMARY
+Computer science graduate interested in NLP and machine learning. Experience building Flask web applications, REST APIs and SQL databases.
+SKILLS
+Python, NLP, Natural Language Processing, Pandas, NumPy, scikit-learn, Machine Learning, Flask, SQLite, MySQL, HTML, CSS, JavaScript, Git
+PROJECTS
+Resume keyword matching prototype using Python and pandas. Built a Flask app with a SQLite database.

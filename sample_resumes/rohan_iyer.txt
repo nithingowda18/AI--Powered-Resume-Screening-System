@@ -1,0 +1,8 @@
+Rohan Iyer
+Email: rohan.iyer@example.com
+SUMMARY
+Junior business intelligence candidate with strong reporting and analytical skills. Familiar with Excel dashboards, Tableau and data modeling.
+SKILLS
+SQL, Excel, Tableau, Data Analysis, Data Analytics, Dashboard, Reporting, Statistics, Data Modeling, MySQL, Power BI, A/B Testing
+PROJECTS
+Created KPI dashboards and monthly business performance reports using SQL and Tableau.

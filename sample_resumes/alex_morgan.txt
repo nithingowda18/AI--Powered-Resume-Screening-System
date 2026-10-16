@@ -1,0 +1,8 @@
+Alex Morgan
+Email: alex.morgan@example.com
+SUMMARY
+Entry-level data analyst with project experience in Python, SQL and Power BI. Comfortable with data cleaning, pandas, Excel and data visualization. Built dashboards and performed exploratory data analysis.
+SKILLS
+Python, SQL, Pandas, NumPy, Power BI, Excel, Statistics, Data Cleaning, Data Visualization, Reporting, Machine Learning, Git
+PROJECTS
+Sales performance dashboard using Power BI and SQL. Customer segmentation using Python and scikit-learn.
